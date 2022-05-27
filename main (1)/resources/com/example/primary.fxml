@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <DatePicker fx:id="tgl_registrasi" maxWidth="250.0" promptText="Tanggal Registrasi" />
+      <ComboBox fx:id="jenis_ac" maxWidth="250.0" promptText="Jenis" />
+      <TextField fx:id="nama_barang" maxWidth="250.0" promptText="Nama Barang" />
+      <TextField fx:id="harga_barang" maxWidth="250.0" promptText="Harga" />
+      <TextField fx:id="stok_barang" maxWidth="250.0" promptText="Jumlah Stok" />
+      <Button fx:id="btn_simpan" maxWidth="250.0" mnemonicParsing="false" onAction="#addData" text="Simpan" />
+      <Button fx:id="btn_lihat" maxWidth="250.0" mnemonicParsing="false" onAction="#changeScene" text="Lihat Data" />
+   </children>
+</VBox>
